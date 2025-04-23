@@ -1,5 +1,5 @@
-  
-import {  Users, Ticket, Check, File, Code, FileJson, } from "lucide-react";
+
+import { Users, Ticket, Check, File, Code, FileJson, } from "lucide-react";
 import Navbar from "./CustomComponents/Navbar";
 import HeroSection from "./CustomComponents/HeroSection";
 import MiniCTA from "./CustomComponents/MiniCTA";
@@ -14,7 +14,7 @@ import EasyToUse from "./CustomComponents/EasyToUse";
 import Testimonials from "./CustomComponents/Testimonials";
 import Footer from "./CustomComponents/Footer";
 
- 
+
 
 // const techIcons = [
 //   { icon: <Code size={40} className="text-yellow-400" />, name: "JavaScript" },
@@ -132,18 +132,23 @@ export default function Index() {
   return (
     <div className="w-full bg-white relative overflow-x-hidden">
       <Navbar />
-      <HeroSection  />
+      <HeroSection />
       <MiniCTA />
       <section className="xl:max-w-7xl mx-auto px-2 md:px-8 py-10 flex flex-col lg:flex-row gap-10 justify-center" id="about">
         {/* <QuoteForm /> */}
         <WhyUsSection />
       </section>
-      <ChoosingWixDox />
+      <div className="py-4">
+        <ChoosingWixDox />
+      </div>
       <TrustedResultsSection />
       <FeatureGrid featureGrid={featureGrid} />
       <StatsBar stats={stats} />
       <FAQSection faqs={faqs} />
-      <EasyToUse />
+      <div className="bg-[url(/fix.jpg)] bg-black/10 bg-cover bg-blend-overlay py-24">
+        <EasyToUse />
+      </div>
+      
       <Testimonials testimonials={testimonials} />
       <Footer />
     </div>
