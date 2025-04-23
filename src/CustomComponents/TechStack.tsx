@@ -46,7 +46,7 @@ const TechStack: React.FC = () => {
     }, []);
 
     return (
-        <section className="py-6 bg-gray-0">
+        <section className="py-8 bg-gradient-to-r from-white via-blue-100 to-white">
             <div className="container mx-auto px-4 md:px-24">
                 <div className="flex flex-wrap items-center">
                     <div className="w-full lg:w-1/6 mb-8 lg:mb-0">

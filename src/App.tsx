@@ -1,90 +1,79 @@
 
-import { Users, Ticket, Check, File, Code, } from "lucide-react";
+ 
 import Navbar from "./CustomComponents/Navbar";
 import HeroSection from "./CustomComponents/HeroSection";
 import MiniCTA from "./CustomComponents/MiniCTA";
-// import QuoteForm from "./CustomComponents/QuoteForm";
+
 import WhyUsSection from "./CustomComponents/WhyUsSection";
 import ChoosingWixDox from "./CustomComponents/ChoosingWixDox";
 import TrustedResultsSection from "./CustomComponents/TrustedResultsSection";
-import FeatureGrid from "./CustomComponents/FeatureGrid";
+// import FeatureGrid from "./CustomComponents/FeatureGrid";
 import StatsBar from "./CustomComponents/StatsBar";
 import FAQSection from "./CustomComponents/FAQSection";
 import EasyToUse from "./CustomComponents/EasyToUse";
 import Testimonials from "./CustomComponents/Testimonials";
 import Footer from "./CustomComponents/Footer";
 import TechStack from "./CustomComponents/TechStack";
+import Services from "./CustomComponents/Services";
 
 
 
-// const techIcons = [
-//   { icon: <Code size={40} className="text-yellow-400" />, name: "JavaScript" },
-//   { icon: <FileJson size={40} className="text-green-700" />, name: "Django" },
-//   { icon: <Settings size={40} className="text-blue-400" />, name: "PHP" },
-//   { icon: <Code size={40} className="text-blue-600" />, name: "WordPress" },
-//   { icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" className="w-10 h-10" />, name: "React" },
-//   { icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" className="w-10 h-10" />, name: "HTML" },
-//   { icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" className="w-10 h-10" />, name: "CSS" },
-//   { icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" className="w-10 h-10" />, name: "Python" },
-//   { icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" className="w-10 h-10" />, name: "MySQL" },
+// const featureGrid = [
+//   {
+//     color: "from-violet-400 to-blue-500",
+//     icon: <File className="w-7 h-7" />,
+//     title: "Custom Software",
+//     desc: "We offer custom software solutions tailored precisely to your business needs.",
+//   },
+//   {
+//     color: "from-violet-400 to-blue-500",
+//     icon: <Code className="w-7 h-7" />,
+//     title: "Web Portals",
+//     desc: "Engage your audience with smart, scalable & secure web portal solutions.",
+//   },
+//   {
+//     color: "from-violet-400 to-blue-500",
+//     icon: <Users className="w-7 h-7" />,
+//     title: "Data Analytics",
+//     desc: "Transform data into insights with advanced analytics & dashboards.",
+//   },
+//   {
+//     color: "from-violet-400 to-blue-500",
+//     icon: <Check className="w-7 h-7" />,
+//     title: "UI/UX Design",
+//     desc: "Intuitive experiences & delightful designs for websites and apps.",
+//   },
+//   {
+//     color: "from-violet-400 to-blue-500",
+//     icon: <Ticket className="w-7 h-7" />,
+//     title: "CRM Consulting",
+//     desc: "End-to-end CRM implementation, integration & support services.",
+//   },
+//   {
+//     color: "from-violet-400 to-blue-500",
+//     icon: <Code className="w-7 h-7" />,
+//     title: "Website Re-Design",
+//     desc: "Revamp legacy websites with fresh UI, UX & modern technology stack.",
+//   },
+//   {
+//     color: "from-violet-400 to-blue-500",
+//     icon: <Code className="w-7 h-7" />,
+//     title: "Website Maintenance",
+//     desc: "Boost site performance & security with our maintenance services.",
+//   },
+//   {
+//     color: "from-violet-400 to-blue-500",
+//     icon: <File className="w-7 h-7" />,
+//     title: "Digital Marketing",
+//     desc: "Amplify your brand's visibility with our smart digital marketing.",
+//   },
+//   {
+//     color: "from-violet-400 to-blue-500",
+//     icon: <Code className="w-7 h-7" />,
+//     title: "Website SEO",
+//     desc: "Optimized sites for search, high traffic and conversion rates.",
+//   },
 // ];
-
-const featureGrid = [
-  {
-    color: "from-violet-400 to-blue-500",
-    icon: <File className="w-7 h-7" />,
-    title: "Custom Software",
-    desc: "We offer custom software solutions tailored precisely to your business needs.",
-  },
-  {
-    color: "from-violet-400 to-blue-500",
-    icon: <Code className="w-7 h-7" />,
-    title: "Web Portals",
-    desc: "Engage your audience with smart, scalable & secure web portal solutions.",
-  },
-  {
-    color: "from-violet-400 to-blue-500",
-    icon: <Users className="w-7 h-7" />,
-    title: "Data Analytics",
-    desc: "Transform data into insights with advanced analytics & dashboards.",
-  },
-  {
-    color: "from-violet-400 to-blue-500",
-    icon: <Check className="w-7 h-7" />,
-    title: "UI/UX Design",
-    desc: "Intuitive experiences & delightful designs for websites and apps.",
-  },
-  {
-    color: "from-violet-400 to-blue-500",
-    icon: <Ticket className="w-7 h-7" />,
-    title: "CRM Consulting",
-    desc: "End-to-end CRM implementation, integration & support services.",
-  },
-  {
-    color: "from-violet-400 to-blue-500",
-    icon: <Code className="w-7 h-7" />,
-    title: "Website Re-Design",
-    desc: "Revamp legacy websites with fresh UI, UX & modern technology stack.",
-  },
-  {
-    color: "from-violet-400 to-blue-500",
-    icon: <Code className="w-7 h-7" />,
-    title: "Website Maintenance",
-    desc: "Boost site performance & security with our maintenance services.",
-  },
-  {
-    color: "from-violet-400 to-blue-500",
-    icon: <File className="w-7 h-7" />,
-    title: "Digital Marketing",
-    desc: "Amplify your brand's visibility with our smart digital marketing.",
-  },
-  {
-    color: "from-violet-400 to-blue-500",
-    icon: <Code className="w-7 h-7" />,
-    title: "Website SEO",
-    desc: "Optimized sites for search, high traffic and conversion rates.",
-  },
-];
 
 const faqs = [
   {
@@ -119,12 +108,16 @@ export default function Index() {
         {/* <QuoteForm /> */}
         <WhyUsSection />
       </section>
-      <TechStack/>
+      <div className="py-6">
+        <TechStack/>
+      </div>
+      
       <div className="py-4">
         <ChoosingWixDox />
       </div>
       <TrustedResultsSection />
-      <FeatureGrid featureGrid={featureGrid} />
+      {/* <FeatureGrid featureGrid={featureGrid} /> */}
+      <Services/>
       <StatsBar stats={stats} />
       <FAQSection faqs={faqs} />
       <div className="bg-[url(/fix.jpg)] bg-black/0 bg-cover bg-fixed bg-center bg-blend-overlay py-24">
