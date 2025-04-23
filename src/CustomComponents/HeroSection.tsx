@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Ticket } from "lucide-react";
+
 
 export default function HeroSection() {
     return (

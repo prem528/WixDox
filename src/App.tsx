@@ -1,5 +1,5 @@
 
-import { Users, Ticket, Check, File, Code, FileJson, } from "lucide-react";
+import { Users, Ticket, Check, File, Code, } from "lucide-react";
 import Navbar from "./CustomComponents/Navbar";
 import HeroSection from "./CustomComponents/HeroSection";
 import MiniCTA from "./CustomComponents/MiniCTA";
@@ -13,6 +13,7 @@ import FAQSection from "./CustomComponents/FAQSection";
 import EasyToUse from "./CustomComponents/EasyToUse";
 import Testimonials from "./CustomComponents/Testimonials";
 import Footer from "./CustomComponents/Footer";
+import TechStack from "./CustomComponents/TechStack";
 
 
 
@@ -100,26 +101,6 @@ const faqs = [
   },
 ];
 
-const testimonials = [
-  {
-    name: "Emanuel",
-    icon: <File className="w-8 h-8 text-orange-500" />,
-    review: "WixDox offers a robust all-in-one platform, making digital changes fast and effective. Their support is truly 24/7. Highly recommended for anyone serious about their online presence.",
-    stars: 5,
-  },
-  {
-    name: "Walton",
-    icon: <Code className="w-8 h-8 text-yellow-500" />,
-    review: "Software, web portals, and campaigns—WixDox have handled it all with absolute professionalism. Impressive design and analytics tools!",
-    stars: 5,
-  },
-  {
-    name: "Percy William",
-    icon: <FileJson className="w-8 h-8 text-green-800" />,
-    review: "Engaged WixDox to revamp our website & manage marketing. Their timely guidance & reporting helped us scale our business to new heights.",
-    stars: 5,
-  },
-];
 
 const stats = [
   { value: "6,604", label: "Problems Resolved" },
@@ -138,6 +119,7 @@ export default function Index() {
         {/* <QuoteForm /> */}
         <WhyUsSection />
       </section>
+      <TechStack/>
       <div className="py-4">
         <ChoosingWixDox />
       </div>
@@ -145,11 +127,12 @@ export default function Index() {
       <FeatureGrid featureGrid={featureGrid} />
       <StatsBar stats={stats} />
       <FAQSection faqs={faqs} />
-      <div className="bg-[url(/fix.jpg)] bg-black/10 bg-cover bg-blend-overlay py-24">
+      <div className="bg-[url(/fix.jpg)] bg-black/0 bg-cover bg-fixed bg-center bg-blend-overlay py-24">
         <EasyToUse />
       </div>
-      
-      <Testimonials testimonials={testimonials} />
+
+
+      <Testimonials  />
       <Footer />
     </div>
   );
