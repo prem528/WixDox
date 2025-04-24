@@ -1,5 +1,3 @@
-
-
 import Navbar from "./CustomComponents/Navbar";
 import HeroSection from "./CustomComponents/HeroSection";
 import MiniCTA from "./CustomComponents/MiniCTA";
@@ -66,8 +64,6 @@ export default function Index() {
        bg-black/0 bg-cover bg-fixed bg-center bg-blend-overlay   py-24">
         <EasyToUse />
       </div>
-
-
       <Testimonials />
       <Footer />
     </div>
