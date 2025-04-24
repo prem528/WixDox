@@ -17,64 +17,6 @@ import TechStack from "./CustomComponents/TechStack";
 import Services from "./CustomComponents/Services";
 
 
-
- 
-//   {
-//     color: "from-violet-400 to-blue-500",
-//     icon: <File className="w-7 h-7" />,
-//     title: "Custom Software",
-//     desc: "We offer custom software solutions tailored precisely to your business needs.",
-//   },
-//   {
-//     color: "from-violet-400 to-blue-500",
-//     icon: <Code className="w-7 h-7" />,
-//     title: "Web Portals",
-//     desc: "Engage your audience with smart, scalable & secure web portal solutions.",
-//   },
-//   {
-//     color: "from-violet-400 to-blue-500",
-//     icon: <Users className="w-7 h-7" />,
-//     title: "Data Analytics",
-//     desc: "Transform data into insights with advanced analytics & dashboards.",
-//   },
-//   {
-//     color: "from-violet-400 to-blue-500",
-//     icon: <Check className="w-7 h-7" />,
-//     title: "UI/UX Design",
-//     desc: "Intuitive experiences & delightful designs for websites and apps.",
-//   },
-//   {
-//     color: "from-violet-400 to-blue-500",
-//     icon: <Ticket className="w-7 h-7" />,
-//     title: "CRM Consulting",
-//     desc: "End-to-end CRM implementation, integration & support services.",
-//   },
-//   {
-//     color: "from-violet-400 to-blue-500",
-//     icon: <Code className="w-7 h-7" />,
-//     title: "Website Re-Design",
-//     desc: "Revamp legacy websites with fresh UI, UX & modern technology stack.",
-//   },
-//   {
-//     color: "from-violet-400 to-blue-500",
-//     icon: <Code className="w-7 h-7" />,
-//     title: "Website Maintenance",
-//     desc: "Boost site performance & security with our maintenance services.",
-//   },
-//   {
-//     color: "from-violet-400 to-blue-500",
-//     icon: <File className="w-7 h-7" />,
-//     title: "Digital Marketing",
-//     desc: "Amplify your brand's visibility with our smart digital marketing.",
-//   },
-//   {
-//     color: "from-violet-400 to-blue-500",
-//     icon: <Code className="w-7 h-7" />,
-//     title: "Website SEO",
-//     desc: "Optimized sites for search, high traffic and conversion rates.",
-//   },
-// ];
-
 const faqs = [
   {
     q: "How to Change my Plans from Admin Dashboard?",
