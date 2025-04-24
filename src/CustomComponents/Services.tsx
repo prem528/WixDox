@@ -3,32 +3,32 @@ import { ArrowRight } from "lucide-react";
 const Services = () => {
   const services = [
     {
-      icon: "/html.svg",
+      icon: "https://static.cdnlogo.com/logos/a/96/android.png",
       title: "Custom Application Development",
       description: "Create scalable web and mobile applications to improve efficiency and reduce time, cost, and effort. With our consulting expertise in custom software solutions, custom application development, data management, integration, and software advisory services, we provide end-to-end design and development services using a rigorous and proven process."
     },
     {
-      icon: "/bootstrap.svg",
+      icon: "https://cdn-icons-png.flaticon.com/512/733/733547.png",
       title: "Digital Marketing",
       description: "WixDox digital marketing services provide businesses of all sizes with an opportunity to market their brand 24/7 at a feasible cost. From startups to medium-sized enterprises to multi-location companies, WixDox helps you expand your market reach to offer goods and services to your target customers."
     },
     {
-      icon: "/tailwind.svg",
+      icon: "https://cdn-icons-png.flaticon.com/512/5968/5968705.png",
       title: "UX and UI Design",
       description: "Our skill in UX design empowers us to enhance and upgrade how users interact with your brand online—whether on a website, mobile app, or even a campaign ad. We craft delightful and intuitive digital experiences."
     },
     {
-      icon: "/reactjs.svg",
+      icon: "https://cdn-icons-png.flaticon.com/512/1126/1126012.png",
       title: "Custom Web Development",
       description: "Our services include full-stack development with modern tools. Whether you need to upgrade an existing app or build a new enterprise solution, WixDox has you covered from front to back end."
     },
     {
-      icon: "/java.svg",
+      icon: "https://cdn-icons-png.flaticon.com/512/226/226777.png",
       title: "Software Testing & Maintenance",
       description: "We use top-tier testing practices and a world-class testing lab to ensure your app’s performance, quality, and reliability. Desktop, mobile, or next-gen—we test it all and help you maintain it."
     },
     {
-      icon: "/firebase.svg",
+      icon: "https://logos-world.net/wp-content/uploads/2021/08/Amazon-Web-Services-AWS-Logo.png",
       title: "Cloud Services",
       description: "Our cloud solutions are tailored to your business needs—fixing issues, scaling infrastructure, improving security, and modernizing applications on any cloud platform."
     }
@@ -36,7 +36,7 @@ const Services = () => {
 
   return (
     <section className="py-20 px-4 max-w-7xl mx-auto">
-      <h2 className="text-4xl font-bold text-gray-900 mb-16 text-center md:text-left">
+      <h2 className="text-4xl font-semibold text-blue-700 mb-16 text-center flex justify-center md:text-left">
         Services
       </h2>
 
@@ -48,7 +48,7 @@ const Services = () => {
           >
             {/* Left 1/3 - Icon */}
             <div className="w-1/3 bg-indigo-50 flex items-center justify-center p-6">
-              <img src={service.icon} alt={service.title} className="w-16 h-16 object-contain" />
+              <img src={service.icon} alt={service.title} className="w-full h-auto object-contain" />
             </div>
 
             {/* Right 2/3 - Text */}

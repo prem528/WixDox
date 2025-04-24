@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+
 import { Truck, Code, Headphones, DollarSign } from "lucide-react";
 
 const features = [
@@ -47,18 +47,6 @@ export default function WhyUsSection() {
             <p className="text-gray-600 text-sm">{f.description}</p>
           </div>
         ))}
-      </div>
-
-      <div className="flex gap-4 pt-6">
-        <Button className="bg-blue-500 px-6 py-2 text-white rounded-lg hover:scale-105 hover:bg-blue-600 transition-transform cursor-pointer">
-          Why Choose Us
-        </Button>
-        <Button
-          variant="outline"
-          className="border-blue-300 text-blue-500 hover:scale-105 hover:bg-blue-100 transition-all"
-        >
-          See More
-        </Button>
       </div>
     </div>
   );

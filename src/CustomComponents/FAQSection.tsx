@@ -1,13 +1,14 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import React from "react";
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+
 
 type Faq = { q: string; a: string; };
 export default function FAQSection({ faqs }: { faqs: Faq[] }) {
   return (
-    <section className="xl:max-w-6xl mx-auto px-2 md:px-8 py-14" id="faq">
-      <h3 className="text-2xl font-bold text-center mb-6">Frequently Asked Question.</h3>
+    <section className="xl:max-w-6xl mx-auto px-2 md:px-8 py-18" id="faq">
+      <h3 className="text-4xl font-semibold text-center text-blue-700 mb-6">Frequently Asked Question.</h3>
       <div className="flex flex-col md:flex-row gap-8 items-center">
-        <div className="flex-1 bg-white rounded-2xl shadow p-7">
+        <div className="flex-1 bg-slate-50 rounded-2xl shadow p-7">
           <Accordion type="single" collapsible className="w-full">
             {faqs.map((faq, idx) => (
               <AccordionItem key={idx} value={`faq-${idx}`}>
@@ -18,7 +19,11 @@ export default function FAQSection({ faqs }: { faqs: Faq[] }) {
           </Accordion>
         </div>
         <div className="flex-1 flex items-center justify-center">
-          <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5" alt="FAQ" className="w-72 h-56 object-cover rounded-xl shadow" />
+          <DotLottieReact
+            src="https://lottie.host/2b86343c-62ad-4d17-b2d4-72030d713282/gO9vdnbjK0.lottie"
+            loop
+            autoplay
+          />
         </div>
       </div>
     </section>

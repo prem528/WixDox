@@ -15,7 +15,25 @@
 .gradient-animation {
   background: linear-gradient(-45deg, #3b82f6, #ec4899, #8b5cf6, #f59e0b);
   background-size: 300% 300%;
-  animation: gradientShift 20s ease infinite;
+  animation: gradientShift 10s ease infinite;
+}
+
+/* Dot Fade In/Out Animation */
+@keyframes dotFade {
+  0%, 100% {
+    opacity: 0;
+    transform: scale(2.5);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+.animate-dotFade {
+  animation-name: dotFade;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 
 
