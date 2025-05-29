@@ -1,28 +1,28 @@
 
-import { Truck, Code, Headphones, DollarSign } from "lucide-react";
 
 const features = [
   {
-    icon: <Truck className="text-orange-500 w-10 h-10 transition-all duration-300" />,
+    icon: "/images/speed.png",
     title: "Fast delivery, agile teams",
     description: "Rapid project delivery thanks to our agile, experienced squad.",
   },
   {
-    icon: <Code className="text-blue-500 w-10 h-10  transition-all duration-300" />,
+    icon: "/images/react.png",
     title: "Full-stack solutions",
     description: "Comprehensive services from concept to launch in one place.",
   },
   {
-    icon: <Headphones className="text-green-500 w-10 h-10 transition-all duration-300" />,
+    icon: "/images/service.png",
     title: "24/7 Support & monitoring",
     description: "Always-on support so your business never misses a beat.",
   },
   {
-    icon: <DollarSign className="text-yellow-500 w-10 h-10 transition-all duration-300" />,
+    icon: "/images/pricing.png",
     title: "Honest, fixed quotes",
     description: "Transparent pricing with no hidden fees or surprises.",
   },
 ];
+
 
 export default function WhyUsSection() {
   return (
@@ -40,7 +40,11 @@ export default function WhyUsSection() {
             key={f.title}
             className="group bg-white border border-gray-200 rounded-xl w-64 h-64 p-6 shadow-md flex flex-col items-center justify-center text-center gap-4 transform transition-transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-sky-50"
           >
-            <div>{f.icon}</div>
+            <img
+              src={f.icon}
+              alt={f.title}
+              className="w-20 h-20 object-contain transition-transform duration-300 group-hover:scale-110"
+            />
             <h3 className="text-lg font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-200">
               {f.title}
             </h3>

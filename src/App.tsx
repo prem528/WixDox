@@ -13,6 +13,7 @@ import Testimonials from "./CustomComponents/Testimonials";
 import Footer from "./CustomComponents/Footer";
 import TechStack from "./CustomComponents/TechStack";
 import Services from "./CustomComponents/Services";
+import QueryForm from "./CustomComponents/QueryForm";
 
 
 const faqs = [
@@ -59,6 +60,7 @@ export default function Index() {
      
       <Services />
       <StatsBar stats={stats} />
+      <QueryForm/>
       <FAQSection faqs={faqs} />
       <div className="bg-[url(https://img.freepik.com/free-vector/colleagues-working-together-office-illustrated_52683-24741.jpg?t=st=1745489456~exp=1745493056~hmac=07c8db9e7ddbc50c1c299a10cf197d065375f420ea0a5e2b3f716c2958525f12&w=2000)] 
        bg-black/0 bg-cover bg-fixed bg-center bg-blend-overlay   py-24">

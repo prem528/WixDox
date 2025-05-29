@@ -35,7 +35,7 @@ export default function Navbar() {
         className={`fixed left-2 right-2 z-40 flex items-center justify-between px-3 sm:px-16 py-2 sm:py-3 
           backdrop-blur-md bg-slate-100/50 shadow-lg transition-all duration-700 ease-in-out 
           rounded-b-xl rounded-t-xl ${
-            showTopBar ? "top-[48px]" : "top-2"
+            showTopBar ? "top-[42px]" : "top-2"
           }`}
       >
         <div className="flex items-center space-x-2">

@@ -20,6 +20,8 @@ const TechStack: React.FC = () => {
         '/java.svg',
         '/python.svg',
         '/vscode.svg',
+        '/c.svg',
+        '/postgreSQL.svg',
     ];
 
     const scrollRef = useRef<HTMLDivElement>(null);

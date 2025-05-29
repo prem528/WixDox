@@ -74,7 +74,7 @@ const Testimonials: React.FC = () => {
   return (
     <section className="py-8 sm:py-18  overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-28">
-        <h2 className="text-2xl sm:text-4xl font-semibold text-blue-700 text-center mb-8 sm:mb-12">What Our Clients Said About Us</h2>
+        <h2 className="text-2xl sm:text-4xl font-semibold text-blue-800 text-center mb-8 sm:mb-12">What Our Clients Said About Us</h2>
         <div 
           ref={scrollRef} 
           className="flex overflow-x-hidden"
@@ -87,15 +87,15 @@ const Testimonials: React.FC = () => {
                 key={index} 
                 className="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[360px] lg:w-80 mx-2 sm:mx-4"
               >
-                <div className="bg-slate-600 rounded-lg shadow-md p-4 sm:p-6 h-full">
+                <div className="bg-gray-200  rounded-lg shadow-md p-4 sm:p-6 h-full">
                   <div className="flex flex-col sm:flex-row items-center mb-4">
                     <img src={image} alt={testimonial.name} className="w-12 h-12 sm:w-16 sm:h-16 rounded-full mb-2 sm:mb-0 sm:mr-4" />
                     <div className="text-center sm:text-left">
-                      <h4 className="font-bold text-white text-lg">{testimonial.name}</h4>
-                      <p className="text-white text-sm">{testimonial.position}</p>
+                      <h4 className="font-bold text-gray-800 text-lg">{testimonial.name}</h4>
+                      <p className="text-gray-500 text-sm">{testimonial.position}</p>
                     </div>
                   </div>
-                  <p className="text-white text-sm sm:text-base">{testimonial.text}</p>
+                  <p className="text-gray-700 text-sm sm:text-base">{testimonial.text}</p>
                 </div>
               </div>
             ))}
